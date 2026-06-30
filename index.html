@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الأندلس للمقاولات والتجارة | ريادة الاستثمار العقاري</title>
+    
+    <!-- خطوط جوجل (تجوال) -->
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <!-- مكتبة الأيقونات -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- مكتبة الأنيميشن -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Tajawal', 'sans-serif'] },
+                    colors: { 
+                        primary: '#d97706', /* لون ذهبي/نحاسي للفخامة */
+                        primaryHover: '#b45309',
+                        secondary: '#0f172a', /* كحلي داكن جداً للثقة */
+                        lightBg: '#f8fafc'
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style>
+        .hero-bg {
+            background-image: linear-gradient(rgba(15, 23, 42, 0.85), rgba(15, 23, 42, 0.7)), url('https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        .pattern-bg {
+            background-image: url('data:image/svg+xml,%3Csvg width="20" height="20" xmlns="http://www.w3.org/2000/svg"%3E%3Ccircle cx="2" cy="2" r="2" fill="%23d97706" fill-opacity="0.1"/%3E%3C/svg%3E');
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-lightBg pt-20">
+
+    <!-- Navbar -->
+    <nav class="bg-white/95 backdrop-blur-md shadow-lg fixed w-full z-50 top-0 transition-all border-b-4 border-primary">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center gap-3">
+                    <div class="w-12 h-12 bg-gradient-to-br from-primary to-yellow-500 text-white rounded-lg flex items-center justify-center text-2xl font-bold shadow-md">أ</div>
+                    <span class="font-bold text-2xl text-secondary tracking-tight">الأندلس <span class="text-primary">للمقاولات</span></span>
+                </div>
+                <div class="hidden md:flex space-x-8 space-x-reverse">
+                    <a href="#home" class="text-secondary hover:text-primary font-bold transition">الرئيسية</a>
+                    <a href="#about" class="text-gray-600 hover:text-primary font-bold transition">من نحن</a>
+                    <a href="#services" class="text-gray-600 hover:text-primary font-bold transition">خدماتنا ومميزاتنا</a>
+                    <a href="#projects" class="text-gray-600 hover:text-primary font-bold transition">سابقة الأعمال</a>
+                    <a href="#contact" class="text-gray-600 hover:text-primary font-bold transition">تواصل معنا</a>
+                </div>
+                <div class="hidden md:flex">
+                    <a href="https://wa.me/201089223412" target="_blank" class="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-2.5 rounded-full font-bold transition flex items-center gap-2 shadow-lg hover:shadow-xl transform hover:-translate-y-1">
+                        <i class="fab fa-whatsapp text-xl"></i> استفسار عاجل
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 1. Hero Section -->
+    <section id="home" class="hero-bg h-[calc(100vh-80px)] flex items-center justify-center text-center relative">
+        <div class="px-4 text-white z-10 w-full max-w-5xl">
+            <span data-aos="fade-down" class="bg-primary/20 text-primary border border-primary px-4 py-1 rounded-full text-sm font-bold tracking-wide mb-6 inline-block">رواد التطوير العقاري في الإسكندرية</span>
+            <h1 data-aos="zoom-in" data-aos-duration="1000" class="text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-tight drop-shadow-2xl">
+                استثمر في مستقبلك مع <br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-yellow-300">صفوة السكن الفاخر</span>
+            </h1>
+            <p data-aos="fade-up" data-aos-delay="300" class="text-lg md:text-2xl mb-10 text-gray-300 font-medium leading-relaxed drop-shadow-md">
+                شركة الأندلس للمقاولات والتجارة تقدم لك وحدات سكنية وتجارية بمواقع استراتيجية تجمع بين الهدوء، الخصوصية، والتصميم المعماري الحديث.
+            </p>
+            <div data-aos="fade-up" data-aos-delay="500" class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-primary hover:bg-primaryHover text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-[0_0_20px_rgba(217,119,6,0.5)] transform hover:scale-105">
+                    احجز وحدتك الآن
+                </a>
+                <a href="#projects" class="bg-white/10 backdrop-blur-sm border-2 border-white/50 hover:bg-white hover:text-secondary text-white px-8 py-4 rounded-full font-bold text-lg transition transform hover:scale-105">
+                    شاهد سابقة أعمالنا
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Statistics Section -->
+    <section class="bg-primary py-12 relative z-20 -mt-10 mx-4 md:mx-auto max-w-6xl rounded-2xl shadow-2xl">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-x divide-x-reverse divide-white/20">
+            <div data-aos="fade-up" data-aos-delay="100">
+                <h3 class="text-4xl font-black text-white mb-2">+15</h3>
+                <p class="text-white/80 font-bold">عاماً من الخبرة</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="200">
+                <h3 class="text-4xl font-black text-white mb-2">+120</h3>
+                <p class="text-white/80 font-bold">مشروع مكتمل</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="300">
+                <h3 class="text-4xl font-black text-white mb-2">+1600</h3>
+                <p class="text-white/80 font-bold">عميل يثق بنا</p>
+            </div>
+            <div data-aos="fade-up" data-aos-delay="400">
+                <h3 class="text-4xl font-black text-white mb-2">100%</h3>
+                <p class="text-white/80 font-bold">التزام بالمواعيد</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. About Section -->
+    <section id="about" class="py-24 bg-white pattern-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <div data-aos="fade-left">
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-12 h-1 bg-primary"></div>
+                        <h4 class="text-primary font-bold text-lg">قصة نجاحنا</h4>
+                    </div>
+                    <h2 class="text-3xl md:text-5xl font-black text-secondary mb-6 leading-tight">أسسنا معايير جديدة <br> للبناء والمقاولات</h2>
+                    <p class="text-gray-600 leading-relaxed mb-6 text-lg font-medium">
+                        نحن لا نبني مجرد جدران، بل نصنع مجتمعات سكنية متكاملة. شركة الأندلس للمقاولات والتجارة هي نتاج سنوات من العمل الدؤوب والالتزام الصارم بأكواد البناء العالمية. نقدم لعملائنا في الإسكندرية، وتحديداً في مناطق مثل سيدي بشر، مشاريع تمزج بين الرفاهية والعملية.
+                    </p>
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-center gap-3 text-secondary font-bold text-lg border-b border-gray-100 pb-2">
+                            <i class="fas fa-shield-alt text-primary text-2xl w-8"></i> أمان قانوني كامل وتراخيص موثقة.
+                        </li>
+                        <li class="flex items-center gap-3 text-secondary font-bold text-lg border-b border-gray-100 pb-2">
+                            <i class="fas fa-gem text-primary text-2xl w-8"></i> تشطيبات فندقية (Ultra Super Lux).
+                        </li>
+                        <li class="flex items-center gap-3 text-secondary font-bold text-lg">
+                            <i class="fas fa-handshake text-primary text-2xl w-8"></i> تسهيلات في السداد تناسب جميع الميزانيات.
+                        </li>
+                    </ul>
+                </div>
+                <div data-aos="fade-right" class="relative">
+                    <div class="grid grid-cols-2 gap-4">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="rounded-2xl shadow-lg mt-8 w-full h-64 object-cover">
+                        <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="rounded-2xl shadow-lg w-full h-64 object-cover">
+                    </div>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white p-4 rounded-full shadow-2xl">
+                        <div class="bg-primary w-20 h-20 rounded-full flex items-center justify-center text-white text-3xl shadow-inner border-4 border-white">
+                            <i class="fas fa-home"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Services Section -->
+    <section id="services" class="py-24 bg-secondary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 data-aos="fade-up" class="text-3xl md:text-5xl font-black mb-4">باقة <span class="text-primary">خدماتنا</span> الشاملة</h2>
+            <p data-aos="fade-up" data-aos-delay="100" class="text-gray-400 max-w-2xl mx-auto mb-16 text-lg">نرافقك من خطوة الحفر ووضع الأساسات، وحتى تسليم مفتاح وحدتك بأبهى صورة.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div data-aos="zoom-in" data-aos-delay="100" class="bg-slate-800 p-8 rounded-3xl border border-slate-700 hover:border-primary transition-all duration-300 group">
+                    <div class="w-20 h-20 bg-slate-700 group-hover:bg-primary transition-colors rounded-2xl flex items-center justify-center mx-auto mb-6 transform rotate-3 group-hover:rotate-6">
+                        <i class="fas fa-hard-hat text-4xl text-primary group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">المقاولات والإنشاءات</h3>
+                    <p class="text-gray-400 leading-relaxed">تنفيذ هياكل خرسانية بأسمنت حديدي مقاوم للزلازل والعوامل الجوية، تحت إشراف نخبة من المهندسين الاستشاريين.</p>
+                </div>
+                <!-- Service 2 -->
+                <div data-aos="zoom-in" data-aos-delay="200" class="bg-slate-800 p-8 rounded-3xl border border-slate-700 hover:border-primary transition-all duration-300 group relative transform -translate-y-4">
+                    <div class="absolute -top-4 right-8 bg-primary text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">الأكثر طلباً</div>
+                    <div class="w-20 h-20 bg-slate-700 group-hover:bg-primary transition-colors rounded-2xl flex items-center justify-center mx-auto mb-6 transform -rotate-3 group-hover:-rotate-6">
+                        <i class="fas fa-couch text-4xl text-primary group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">التشطيبات والديكور</h3>
+                    <p class="text-gray-400 leading-relaxed">باقات تشطيب متنوعة (سوبر لوكس - ألترا لوكس) باستخدام أجود الخامات العالمية من السيراميك، الدهانات، والجبس بورد.</p>
+                </div>
+                <!-- Service 3 -->
+                <div data-aos="zoom-in" data-aos-delay="300" class="bg-slate-800 p-8 rounded-3xl border border-slate-700 hover:border-primary transition-all duration-300 group">
+                    <div class="w-20 h-20 bg-slate-700 group-hover:bg-primary transition-colors rounded-2xl flex items-center justify-center mx-auto mb-6 transform rotate-3 group-hover:rotate-6">
+                        <i class="fas fa-chart-line text-4xl text-primary group-hover:text-white transition-colors"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">الاستثمار وإدارة الأملاك</h3>
+                    <p class="text-gray-400 leading-relaxed">توجيه استثمارك العقاري نحو المشاريع ذات العائد الأعلى والموقع الأفضل في الإسكندرية لضمان تضاعف رأس مالك.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. Projects Section -->
+    <section id="projects" class="py-24 bg-lightBg pattern-bg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div>
+                    <h2 data-aos="fade-right" class="text-3xl md:text-5xl font-black text-secondary mb-4">سابقة <span class="text-primary">أعمالنا المتميزة</span></h2>
+                    <p data-aos="fade-right" data-aos-delay="100" class="text-gray-600 text-lg font-medium max-w-2xl">تصفح أحدث مشاريعنا التي تم تسليمها على أرض الواقع، حيث تتحدث الجودة عن نفسها.</p>
+                </div>
+            </div>
+
+            <!-- شبكة الصور المتوسعة (6 مشاريع) -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div data-aos="zoom-in" data-aos-delay="100" class="group relative overflow-hidden rounded-3xl shadow-lg h-72 cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-3">تم التسليم</span>
+                        <h3 class="text-white text-2xl font-bold">كمبوند صفوة السيوف</h3>
+                        <p class="text-gray-300 text-sm mt-2"><i class="fas fa-map-marker-alt text-primary"></i> سيدي بشر - أرض الفضالي</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div data-aos="zoom-in" data-aos-delay="200" class="group relative overflow-hidden rounded-3xl shadow-lg h-72 cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-3">متاح للحجز</span>
+                        <h3 class="text-white text-2xl font-bold">برج الأندلس رويال</h3>
+                        <p class="text-gray-300 text-sm mt-2"><i class="fas fa-map-marker-alt text-primary"></i> الإسكندرية - واجهة بحرية</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div data-aos="zoom-in" data-aos-delay="300" class="group relative overflow-hidden rounded-3xl shadow-lg h-72 cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="bg-yellow-500 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-3">أعمال تشطيب</span>
+                        <h3 class="text-white text-2xl font-bold">ديكورات فيلا العروبة</h3>
+                        <p class="text-gray-300 text-sm mt-2"><i class="fas fa-paint-roller text-primary"></i> تشطيب ألترا مودرن</p>
+                    </div>
+                </div>
+                 <!-- Project 4 -->
+                 <div data-aos="zoom-in" data-aos-delay="400" class="group relative overflow-hidden rounded-3xl shadow-lg h-72 cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
+                        <span class="bg-primary text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-3">مشاريع تجارية</span>
+                        <h3 class="text-white text-2xl font-bold">مول الأندلس التجاري</h3>
+                        <p class="text-gray-300 text-sm mt-2"><i class="fas fa-store text-primary"></i> مساحات إدارية وتجارية</p>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div data-aos="zoom-in" data-aos-delay="500" class="group relative overflow-hidden rounded-3xl shadow-lg h-72 cursor-pointer md:col-span-2 lg:col-span-2">
+                    <img src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-gradient-to-t from-secondary via-secondary/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-8">
+                        <span class="bg-green-500 text-white text-xs font-bold px-3 py-1 rounded-full w-max mb-3">مشروع ضخم</span>
+                        <h3 class="text-white text-3xl font-bold">مجمع سكني متكامل (تحت الإنشاء)</h3>
+                        <p class="text-gray-300 mt-2 max-w-xl">مشروعنا الأحدث يضم مساحات خضراء، جراجات خاصة، وأمن على مدار الساعة لتوفير بيئة مثالية لعائلتك.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. Contact Section -->
+    <section id="contact" class="py-24 bg-white relative overflow-hidden">
+        <div class="absolute -top-24 -right-24 w-96 h-96 bg-primary opacity-10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 -left-24 w-72 h-72 bg-secondary opacity-10 rounded-full blur-3xl"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="bg-secondary rounded-[3rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row">
+                
+                <!-- بيانات التواصل -->
+                <div class="bg-secondary text-white p-12 lg:w-5/12 flex flex-col justify-center relative">
+                    <div class="absolute top-0 right-0 w-32 h-32 bg-primary opacity-20 rounded-bl-full"></div>
+                    <h2 class="text-3xl font-black mb-4 z-10">هل أنت مستعد لبدء مشروعك؟</h2>
+                    <p class="text-gray-400 mb-10 z-10">تواصل مع خبرائنا الآن للحصول على معاينة مجانية وعرض سعر مخصص يلبي طموحاتك.</p>
+                    
+                    <div class="space-y-8 z-10">
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-primary text-xl flex-shrink-0">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">المقر الرئيسي</h4>
+                                <p class="text-gray-400">أرض الفضالي - سيدي بشر، الإسكندرية، 02030</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-primary text-xl flex-shrink-0">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">الخط الساخن</h4>
+                                <p class="text-gray-400" dir="ltr">10892234 012</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-5">
+                            <div class="w-12 h-12 bg-white/10 rounded-xl flex items-center justify-center text-green-500 text-2xl flex-shrink-0">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">واتساب المبيعات</h4>
+                                <p class="text-gray-400" dir="ltr">+20 12 10892234</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- نموذج الحجز -->
+                <div class="bg-white p-12 lg:w-7/12">
+                    <h3 class="text-2xl font-bold text-secondary mb-8">سجل بياناتك وسنتواصل معك فوراً</h3>
+                    <form onsubmit="event.preventDefault(); alert('تم استلام طلبك بنجاح! سيتم التواصل معك خلال 24 ساعة.');" class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2 text-sm">الاسم الكريم</label>
+                                <input type="text" placeholder="اكتب اسمك" required class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-bold mb-2 text-sm">رقم الهاتف</label>
+                                <input type="tel" placeholder="رقم للتواصل" required class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                            </div>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-bold mb-2 text-sm">أنا مهتم بـ</label>
+                            <select class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition">
+                                <option>شراء شقة سكنية (كاش / تقسيط)</option>
+                                <option>استثمار في وحدة تجارية</option>
+                                <option>بناء / تشطيب عقار كامل</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 font-bold mb-2 text-sm">رسالتك (اختياري)</label>
+                            <textarea rows="3" placeholder="حدد المساحة المطلوبة أو أي استفسار آخر..." class="w-full px-5 py-4 bg-gray-50 border border-gray-200 rounded-xl focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-primary hover:bg-primaryHover text-white font-bold py-4 rounded-xl shadow-[0_10px_20px_rgba(217,119,6,0.3)] transition duration-300 text-lg flex justify-center items-center gap-2">
+                            تأكيد إرسال الطلب <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+   <footer class="bg-slate-900 text-gray-400 py-10 border-t border-slate-800 text-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col gap-3">
+            <p class="text-sm">جميع الحقوق محفوظة © 2026 شركة الأندلس للمقاولات والتجارة.</p>
+            
+            <p class="text-xs text-gray-500">
+                تم التصميم والتطوير بواسطة 
+                <a href="https://kodia-web-design-eg-com.vercel.app" target="_blank" class="text-primary hover:text-white transition-colors font-bold">
+                    Kodia Web Design
+                </a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- تفعيل مكتبة الأنيميشن AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>
